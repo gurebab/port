@@ -1,0 +1,26 @@
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 1045.2 396.5" style="enable-background:new 0 0 1045.2 396.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{
+		fill:none;
+		stroke:#FF6464;
+		stroke-width:2;
+		stroke-miterlimit:10;
+		stroke-dasharray : 1600;
+		animation : mov;
+		animation-duration: 1s;
+    	animation-delay: 0.2s;
+    	animation-fill-mode: forwards;
+		}
+		@keyframes mov{
+			0%{
+				stroke-dashoffset: -1600;
+			}
+			100%{
+				stroke-dashoffset: 0;
+			}
+		}
+</style>
+<path class="st0" d="M1045.2,197.2H545l-62.2,189.5c-0.3,0.8-1.4,0.8-1.6,0L419,197.2h0L357.7,10.3c-0.5-1.6-2.8-1.6-3.3,0
+	L293,197.2c0,0-293,0-293,0"/>
+</svg>
