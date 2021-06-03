@@ -52,11 +52,29 @@ img{
   width: 100%;
 }
 .sec-name{
-  display: block;
+  position: relative;
+  display: inline-block;
+  right: 0;
   font-size: 36px;
   font-weight: bold;
   font-family: list-font;
   margin-bottom: 50px;
+}
+.sec-name::after{
+  position: absolute;
+  top : 0;
+  left: -15px;
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffba67;
+  z-index: 5;
+}
+.sec-name.hide::after{
+  opacity: 0;
+  visibility: hidden;
 }
 span span{
   color:#67cec9 !important;

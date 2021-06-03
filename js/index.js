@@ -2,23 +2,24 @@ $(function(){
     //풀페이지
     $('#fullpage').fullpage({
         responsiveWidth: 1601,
-        //각 페이지 인덱스 찾는법
+
+        
         afterLoad: function(origin,destination, direction){
             if(destination.index == 1){
                 $(".sec2 .con > .content-txt").css({'opacity' : 1 , 'margin-left' : 0,});
-                $(".sec2 .con > .sec-name").css({'opacity' : 1 , 'margin-right' : 0,})
+                $(".sec2 .con > .sec-name").css({'opacity' : 1 , 'margin-right' : 0,});
             }else{
                 $(".sec2 .con > .content-txt").css({'opacity' : 0 , 'margin-left' : '-50px',});
-                $(".sec2 .con > .sec-name").css({'opacity' : 0 , 'margin-right' : '-50px',})
+                $(".sec2 .con > .sec-name").css({'opacity' : 0 , 'margin-right' : '-50px',});
             };
 
             if(destination.index == 2){
-                var tt = $('.vital').drawsvg({
+                var svg = $('.vital').drawsvg({
                     duration:1200,
                     easing: 'swing',
                     reverse: true,  
                 })
-                tt.drawsvg('animate');
+                svg.drawsvg('animate');
                 $(".sec3 .con > .vital-wrap").css({'opacity' : 1,});
                 $(".sec3 .con > .contetn-txt").addClass("active");
             }else{
@@ -31,12 +32,17 @@ $(function(){
                 $(".bg").css({'opacity' : 0 , 'visibility': 'hidden'});
                 $(".sec4 .con").addClass("active");
                 $(".header-btn .btn-wrap .bar").css({'background-color' : 'black'});
-                
+                $(".arrow .arrow-color").css({'fill' : 'black'});
+                $(".arrow").addClass("com");
             }else{
                 $(".bg").css({'opacity' : 1 , 'visibility': 'visible'});
                 $(".sec4 .con").removeClass("active");
                 $(".header-btn .btn-wrap .bar").css({'background-color' : 'white'});
+                $(".arrow .arrow-color").css({'fill' : 'white'});
+                $(".arrow").removeClass("com");
             };
+
+            
             if(destination.index == 4){
                 var fill = $('.graph').drawsvg({
                     duration: 1000,
@@ -46,20 +52,36 @@ $(function(){
                 fill.drawsvg('animate');
                 $(".work-item > svg").css({ 'opacity' : 1 });
                 $(".svg-text").css({'opacity' :'1' , 'left' : '50%'});
+                // $(".arrow .arrow-color").css({'fill' : 'white'});
+                // $(".arrow").removeClass("com");
             }else{
                 $(".work-item > svg").css({ 'opacity' : 0 });
                 $(".svg-text").css({'opacity' :'0' , 'left' : '40%'});
+                // $(".arrow .arrow-color").css({'fill' : 'black'});
+                // $(".arrow").addClass("com");
             };
+
+
+            if(destination.index == 7){
+                $('.arrow').css({'opacity' : '0'});
+                console.log("푸터");
+            }else{
+                $('.arrow').css({'opacity' : '1'}); 
+            }
+            
         },
         anchors : ['section1','section2','section3','section4','section5','section6' ,'section7', 'section8'],
 	});
+
     //네비게이션
     $('.header-btn').click(function(){
         $('header').toggleClass("active");
         $(this).toggleClass("active");
     });
 
-    //최상단 페이지 로고
+    //fixed 아이콘
+
+    //섹션1
     var fill = $('.svg-logo').drawsvg({
         duration:500,
         easing: 'swing',
@@ -67,11 +89,11 @@ $(function(){
     })
     fill.drawsvg('animate');
 
-    //슬릭 -sec3
+    //섹션4
     $(".sec4 .picto-wrap").slick({
         infinite : true,
         autoplay : true,
-        autoplaySpeed : 1900,
+        autoplaySpeed : 1400,
         speed: 100,
         arrows : false,
         fade: true,
@@ -81,13 +103,16 @@ $(function(){
     $(".sec4 .text-wrap").slick({
         infinite : true,
         autoplay : true,
-        autoplaySpeed : 2000,
+        autoplaySpeed : 1500,
         speed: 0,
         arrows : false,
         fade: true,
         draggable: false,
         pauseOnHover: false,
     });
+    //섹션5
+
+    //섹션6
     $(".sec6 .port-wrap .item").mouseover(function(){
         var index = $(this).index();
         var bg = $(".sec6 .port-wrap .item").eq(index).css("background-image");
@@ -95,17 +120,18 @@ $(function(){
         $(".sec6-wrap").addClass("active");
         $(".sec6 .port-wrap .item").removeClass("active");
         $(".sec6 .port-wrap .item").eq(index).addClass("active");
-        $(".sec6 .sec-name").css({'color' : 'white'});
+        $(".sec6 .sec-name").css({'color' : 'rgba(0,0,0,0'});
+        $(".sec6 .sec-name").addClass("hide");
     });
     $(".sec6 .port-wrap").mouseleave(function(){
         $(".sec6").css({'background-image' : 'none'});
         $(".sec6-wrap").removeClass("active");
         $(".sec6 .port-wrap .item").removeClass("active");
         $(".sec6 .sec-name").css({'color' : '#353e43'});
+        $(".sec6 .sec-name").removeClass("hide");
     });
 
-
-
+    //섹션7
     $(".sec7-slide-wrap").slick({
         infinite : true,
         arrows : false,
@@ -141,11 +167,8 @@ $(function(){
     });
     $(".sec7 .item > img").click(function(){
         var image = $(this).attr('src');
-        // console.log(image);
         $(".sec7 .pop").addClass("active");
         $(".sec7 .pop img").attr('src',image);
-
-
 
         //이미지 확대 기능
         console.log($(".sec7 .pop img").css('height'));
@@ -176,9 +199,35 @@ $(function(){
                 }
             };
         }
-
         $(".sec7 .pop").click(function(){
             $(".sec7 .pop").removeClass("active");
         });
+    });
+
+
+
+
+
+    //모바일에서 변해야 할 것들
+    $(window).scroll(function(){
+        var scr = $(".sec2").offset().top;
+        if($(".arrow").offset().top >= scr){
+            $(".arrow").css({'opacity' : 0});
+        }
+        else{
+            $(".arrow").css({'opacity' : 1});
+        }
+    });
+
+    //반응형 1600px
+    if (matchMedia("screen and (max-width: 1600px)").matches){
+        $(".sec-name").addClass("hide");
+        console.log("1600임")
+    }
+    $(window).resize(function(){
+        if($(window).width() >768){
+            $(".sec-name").addClass("hide");
+            console.log("1600임 리사이즈")
+        }
     });
 });

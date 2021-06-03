@@ -176,18 +176,37 @@ header.active{
 }
 .arrow{
     position: absolute;
+    bottom: 20px;
     left: 50%;
-    transform: translate(-50% ,-50%) rotate(135deg);
-    width: 20px;
-    height: 20px;
-    border-top: 2px solid #67cec9;
-    border-right: 2px solid #67cec9;
-    box-sizing: border-box;
+    transform: translate(-50% ,-50%);
+    width: 50px;
+    transition: 0.5s;
     cursor: pointer;
+    z-index: 10;
+}
+.arrow::after{
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    top : 40%;
+    left: 50%;
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
 
-    animation: arrowBounce;
-    animation-duration: 1s;
+    animation: arrow-bounce;
+    animation-duration: 0.8s;
     animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.arrow.com::after{
+    background-color: black;
+}
+.arrow .arrow-color{
+    fill:#FFFFFF;
+    transition: 0.5s;
 }
 
 .sec2 .con{
@@ -201,8 +220,12 @@ header.active{
     transition: 0.5s;
 }
 .sec2 .con > .sec-name{
+    display: block;
     text-align: right;
     margin-right: -50px;
+}
+.sec2 .con > .sec-name::after{
+    visibility: hidden;
 }
 .sec2 .con > .content-txt{
     display: block;
@@ -306,7 +329,7 @@ header.active{
     box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
 
     animation: jump;
-    animation-duration: 2.00s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
 .sec4 .item{
@@ -325,15 +348,54 @@ header.active{
 .sec4 .text-wrap{
     margin-top: 50px;
 }
+.sec5 .sec5-bg{
+    width: 100%;
+    background-image: url(../img/fixed-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    overflow: hidden;
+}
+.sec5 .sec5-bg.bg2{
+    transform: rotate(180deg);
+}
+.sec5 .con{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: white;
+    z-index: 100;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+.sec5 .con::before{
+    position: absolute;
+    top : 0;
+    left: -100%;
+    content: "";
+    display: block;
+    width:100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+}
+.sec5 .con::after{
+    position: absolute;
+    top : 0;
+    right: -100%;
+    content: "";
+    display: block;
+    width:100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+}
 .sec5 .sec-name{
     text-align: left;
     width: 100%;
     color: black;
-}
-.sec5 .con{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 .sec5 .con > .sec5-wrap{
     width: 50%;
@@ -413,6 +475,12 @@ header.active{
     text-align: left;
     color: #353e43;
     transition: 0.5s;
+    opacity: 1;
+}
+.sec6 .sec-name::after{
+    background-color: white;
+    opacity: 1;
+    transition: 0.3s;
 }
 .sec6 .port-wrap{
     width: 100%;
@@ -433,12 +501,6 @@ header.active{
     position: relative;
     overflow: hidden;
 }
-/* .sec6 .port-wrap .item img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-} */
 .sec6 .port-wrap .item.active{
     width: 30%;
 }
@@ -481,10 +543,13 @@ header.active{
     color: black;
 }
 
-
+.sec7 .con{
+    height: 100%;
+}
 .sec7 .con .section-name-wrap{
     display: flex;
     flex-direction: row;
+    margin-top: 150px;
 }
 .sec7 .con .sec-name{
     display: block;
@@ -541,8 +606,13 @@ header.active{
     visibility: visible;
     width: 100%;
     max-height:  100%;
+    margin-top: 0 auto;
     z-index: 2;
 }
+.sec7 .con .sec7-slide-wrap .slick-dots{
+    bottom: -150px;
+}
+
 .sec7 .con .sec7-slide-wrap .item{
     width: 50%;
 }
@@ -552,9 +622,6 @@ header.active{
     margin: 0 auto;
     cursor: pointer;
     cursor: url(../img/cur.cur), auto;
-}
-.sec7-slide-wrap .slick-dots{
-    bottom: -30px;
 }
 .sec7-slide-wrap .slick-dots li{
     background-color: rgba(0,0,0,0.5);
@@ -616,9 +683,6 @@ header.active{
 .sec8 .con .footer-item{
     width: 50%;
 }
-.sec8 .con .footer-item:first-child{
-    margin-bottom: 50px;
-}
 .sec8 .con .footer-item.item-left .item-left-box{
     margin-bottom: 30px;
     display: flex;
@@ -643,6 +707,14 @@ header.active{
     line-height: 1.8;
 }
 /* 키프레임 */
+@keyframes arrow-bounce{
+    0%{
+        top : 40%
+    }
+    100%{
+        top : 50%;
+    }
+}
 @keyframes leftMove{
     0%{
         top : 30%;
@@ -667,14 +739,6 @@ header.active{
     100%{
         letter-spacing : 20px;
         opacity: 1;
-    }
-}
-@keyframes arrowBounce{
-    0%{
-        bottom: 20%;
-    }
-    100%{
-        bottom: 18%;
     }
 }
 @keyframes jump{
@@ -703,15 +767,18 @@ header.active{
         opacity: 0;
     }
 }
-
 @media (max-width : 1024px){
+    .arrow{
+        position: fixed;
+    }
     .sec2 .con > span{
         transition: 1.2s;
     }
-
-    .sec5 .fp-tableCell{
-        padding-top: 50px;
-        padding-bottom: 50px;
+    .sec5 .con::before{
+        display: none;
+    }
+    .sec5 .con::after{
+        display: none;
     }
     .sec5 .sec-name{
         margin-bottom: 100px;
@@ -776,6 +843,12 @@ header.active{
         vertical-align: middle;
         background-color: rgba(255,255,255,0.8);
     }
+    .sec7 .con{
+        height: auto;
+    }
+    .sec7 .con .section-name-wrap{
+        margin-top: 0;
+    }
     .sec7 .pop .pop-relative .pop-img-wrap{
         position: absolute;
         transform: translate(-50% ,-50%);
@@ -801,7 +874,7 @@ header.active{
         width: 50px;
     }
     .header-btn{
-        left : -50px;
+        left : -60px;
     }
     .list-wrap > ul > li > a > img{
         display: block;
@@ -903,7 +976,9 @@ header.active{
     .work-item{
         width: 22%;
     }
-
+    .sec7 .con .sec7-slide-wrap .slick-dots{
+        bottom: -100px;
+    }
     /* 바꾸는 푸터 */
     .sec8 .con{
         position: relative;
@@ -930,8 +1005,10 @@ header.active{
         height: 40px;
         margin-right: 10px;
     }
+    
     .footer-item.item-right{
         position: relative;
+        margin-top: 50px;
         text-align: right;
     }
     .footer-item.item-right span{
