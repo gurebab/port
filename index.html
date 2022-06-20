@@ -4,432 +4,418 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <script src="./js/JQ.js"></script>
-    <script src="./js/fullpage.js"></script>
-    <script src="./js/examples.js"></script>
-    <script src="./js/jquery.drawsvg.js"></script>
-    <script src="./js/slick.js"></script>
-    <script src="./js/index.js"></script>
+    <title>이유섭 포트폴리오</title>
 
-    <!-- <script type="text/javascript"> 
-        var gomoblie = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson'); 
-        for (var word in gomoblie){ 
-            if (navigator.userAgent.match(gomoblie[word]) != null){ 
-                location.href = 'https://m.naver.com';
-                break;
-            } 
-        }
-    </script> -->
+    <script src="./resourse/js/jquery-3.5.1.js" ></script>
+    <script src="./resourse/js/jquery.drawsvg.min.js"></script>
+    <script src="./resourse/js/slick.js"></script>
+    <script src="./resourse/js/jquery.fullPage.js"></script>
+    <script src="./resourse/js/style.js"></script>
 
-    <link rel="stylesheet" href="./css/fullpage.css">
-    <link rel="stylesheet" href="./css/examples.css">
-    <link rel="stylesheet" href="./css/slick-theme.css">
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/nomar.css">
-    <link rel="stylesheet" href="./css/square-ani.css">
-    <link rel="stylesheet" href="./css/index.css">
-
-    <title>이유섭 웹퍼블리싱 포트폴리오</title>
+    <link rel="stylesheet" href="./resourse/css/slick.css">
+    <link rel="stylesheet" href="./resourse/css/jquery.fullPage.css">
+    <link rel="stylesheet" href="./resourse/css/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-btn">
-            <div class="btn-wrap">
-                <span class="bar bar1"></span>
-                <span class="bar bar2"></span>
-                <span class="bar bar3"></span>
-            </div>
-        </div>
-        <nav class="list-wrap">
-            <ul>
-                <li data-menuanchor="section1"><a href="#section1"><img src="./img/em- 01 user.svg" alt="메인섹션 바로가기 아이콘"></a></li>
-                <li data-menuanchor="section5"><a href="#section5"><img src="./img/em- 02 system.svg" alt="프로필 바로가기 아이콘"></a></li>
-                <li data-menuanchor="section6"><a href="#section6"><img src="./img/em- 03 window.svg" alt="포트폴리오모음섹션 바로가기 아이콘"></a></li>
-                <li data-menuanchor="section7"><a href="#section7"><img src="./img/em- 05 idea.svg" alt="퍼블리싱 외 작품섹션 바로가기 아이콘"></a></li>
-                <li data-menuanchor="section8"><a href="#section8"><img src="./img/em- 04 meil.svg" alt="연락처 바로가기"></a></li>
-            </ul>
-        </nav>
-    </header>
     <div class="bg">
-        <div class="bg-opacity"></div>
-        <div class="square-wrap">
-            <div class="sq-wrap sq-left-wrap">
-                <div class="sq-item sq-item1">
-                    <div class="sq-item-piece sq-item-piece01">1</div>
-                    <div class="sq-item-piece sq-item-piece02">2</div>
-                    <div class="sq-item-piece sq-item-piece09">9</div>
-                    <div class="sq-item-piece sq-item-piece10">10</div>
-                </div>
-                <div class="sq-item sq-item2">
-                    <div class="sq-item-piece sq-item-piece03">3</div>
-                    <div class="sq-item-piece sq-item-piece04">4</div>
-                    <div class="sq-item-piece sq-item-piece11">11</div>
-                    <div class="sq-item-piece sq-item-piece12">12</div>
-                </div>
-                <div class="sq-item sq-item3">
-                    <div class="sq-item-piece sq-item-piece17">17</div>
-                    <div class="sq-item-piece sq-item-piece18">18</div>
-                    <div class="sq-item-piece sq-item-piece25">25</div>
-                    <div class="sq-item-piece sq-item-piece26">26</div>
-                </div>
-                <div class="sq-item sq-item4">
-                    <div class="sq-item-piece sq-item-piece19">19</div>
-                    <div class="sq-item-piece sq-item-piece20">20</div>
-                    <div class="sq-item-piece sq-item-piece27">27</div>
-                    <div class="sq-item-piece sq-item-piece28">28</div>
-                </div>
-            </div>
-            <div class="sq-wrap sq-right-wrap">
-                <div class="sq-item sq-item1">
-                    <div class="sq-item-piece sq-item-piece05">5</div>
-                    <div class="sq-item-piece sq-item-piece06">6</div>
-                    <div class="sq-item-piece sq-item-piece13">13</div>
-                    <div class="sq-item-piece sq-item-piece14">14</div>
-                </div>
-                <div class="sq-item sq-item2">
-                    <div class="sq-item-piece sq-item-piece07">7</div>
-                    <div class="sq-item-piece sq-item-piece08">8</div>
-                    <div class="sq-item-piece sq-item-piece15">15</div>
-                    <div class="sq-item-piece sq-item-piece16">16</div>
-                </div>
-                <div class="sq-item sq-item3">
-                    <div class="sq-item-piece sq-item-piece21">21</div>
-                    <div class="sq-item-piece sq-item-piece22">22</div>
-                    <div class="sq-item-piece sq-item-piece29">29</div>
-                    <div class="sq-item-piece sq-item-piece30">30</div>
-                </div>
-                <div class="sq-item sq-item4">
-                    <div class="sq-item-piece sq-item-piece23">23</div>
-                    <div class="sq-item-piece sq-item-piece24">24</div>
-                    <div class="sq-item-piece sq-item-piece31">31</div>
-                    <div class="sq-item-piece sq-item-piece32">32</div>
-                </div>
-            </div>
-        </div>
+        <div class="opacity"></div>
     </div>
-    <div class="arrow" data-menuanchor="section2"; onclick="location.href='#section2';">
-        <svg version="1.1" src="./img/scroll-icon-white.svg" alt="다음 섹션이로 이동하는 버튼" x="0px"
-	 y="0px" viewBox="0 0 80 120" style="enable-background:new 0 0 80 120;" xml:space="preserve">
-            <g class="body">
-	<path class="arrow-color" d="M40,28.5c11,0,20,9,20,20v23c0,11-9,20-20,20c-11,0-20-9-20-20v-23C20,37.5,29,28.5,40,28.5 M40,25.5L40,25.5
-		c-12.7,0-23,10.3-23,23v23c0,12.7,10.3,23,23,23h0c12.7,0,23-10.3,23-23v-23C63,35.8,52.7,25.5,40,25.5L40,25.5z"/>
-            </g>
-            <g>
-	<polygon class="arrow-color" points="33.9,10.3 31.8,8.2 40,0 48.2,8.2 46.1,10.3 40,4.2 	"/>
-            </g>
-            <g>
-	<polygon class="arrow-color" points="40,120 31.8,111.8 33.9,109.7 40,115.8 46.1,109.7 48.2,111.8 	"/>
-            </g>
-        </svg>
+    <div class="header_wrap">
+        <button class="header_open" >
+            <span class="bar bar01"></span>
+            <span class="bar bar02"></span>
+            <span class="bar bar03"></span>
+        </button>
+        <div class="header">
+            <ul id="menu">
+                <li data-anchor="section02" class="introduce">
+                    <a href="#section02">
+                        <div class="img"></div>
+                        <span>소개</span>
+                    </a>
+                </li>
+                <li data-anchor="section03" class="introduce">
+                    <a href="#section03">
+                        <div class="img"></div>
+                        <span>프로필</span>
+                    </a>
+                </li>
+                <li data-anchor="section04" class="introduce">
+                    <a href="#section04">
+                        <div class="img"></div>
+                        <span>포트폴리오</span>
+                    </a>
+                </li>
+                <li data-anchor="section05" class="introduce">
+                    <a href="#section05">
+                        <div class="img"></div>
+                        <span>디자인</span>
+                    </a>
+                </li>
+                <li data-anchor="section06" class="introduce">
+                    <a href="#section06">
+                        <div class="img"></div>
+                        <span>연락처</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
     <div id="fullpage">
-        <div class="section sec1">
-            <p class="text-hide">섹션1</p>
-            <div class="con">
-                <div class="logo-box">
+        <div class="section section01">
+            <div class="section_wrap">
+                <div class="logo_box">
                     <svg version="1.1" class="svg-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
- y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
-<g>
-<path fill="none" d="M118.2,199.9v26.3h91.6c17.1,0,31-13.9,31-31v-0.7H118.2V199.9z"/>
-<path fill="none" d="M118.2,143.6v6.3h122.6v-16.1h-91.6c-16.3,0-29.6-13.3-29.6-29.6v-31H119c-33.6,0-59.5,27.1-59.9,62h59.1
-    V143.6z"/>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="241.3771" y1="74.735" x2="-0.5029" y2="74.735">
-    <stop  offset="0" style="stop-color:#3A9FA0"/>
-    <stop  offset="0.4256" style="stop-color:#35A1A0"/>
-    <stop  offset="0.9312" style="stop-color:#27A9A2"/>
-    <stop  offset="1" style="stop-color:#24AAA2"/>
-</linearGradient>
-<path fill="none" stroke="url(#SVGID_1_)" stroke-miterlimit="10" d="M119,73.3h0.7v31c0,16.3,13.3,29.6,29.6,29.6h91.6V74.7h-62
-    V14.2H119C52.8,14.2,0.4,67.8,0,135.3h59.1C59.5,100.4,85.4,73.3,119,73.3z"/>
-<path fill="none" stroke="#353E43" stroke-miterlimit="10" d="M240.9,14.2v31.2v29.4v59.1v16.1H118.2v-6.3v-8.3H59.1v150.5
-    l150.7-0.5c49.7,0,90.1-40.4,90.1-90.1v-181H240.9z M240.9,195.2c0,17.1-13.9,31-31,31h-91.6v-26.3v-5.4h122.6V195.2z"/>
-</g>
+                    y="0px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+                   <g>
+                   <path fill="none" d="M118.2,199.9v26.3h91.6c17.1,0,31-13.9,31-31v-0.7H118.2V199.9z"/>
+                   <path fill="none" d="M118.2,143.6v6.3h122.6v-16.1h-91.6c-16.3,0-29.6-13.3-29.6-29.6v-31H119c-33.6,0-59.5,27.1-59.9,62h59.1
+                       V143.6z"/>
+                   <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="241.3771" y1="74.735" x2="-0.5029" y2="74.735">
+                       <stop  offset="0" style="stop-color:#3A9FA0"/>
+                       <stop  offset="0.4256" style="stop-color:#35A1A0"/>
+                       <stop  offset="0.9312" style="stop-color:#27A9A2"/>
+                       <stop  offset="1" style="stop-color:#24AAA2"/>
+                   </linearGradient>
+                   <path fill="none" stroke="url(#SVGID_1_)" stroke-miterlimit="10" d="M119,73.3h0.7v31c0,16.3,13.3,29.6,29.6,29.6h91.6V74.7h-62
+                       V14.2H119C52.8,14.2,0.4,67.8,0,135.3h59.1C59.5,100.4,85.4,73.3,119,73.3z"/>
+                   <path fill="none" stroke="#353E43" stroke-miterlimit="10" d="M240.9,14.2v31.2v29.4v59.1v16.1H118.2v-6.3v-8.3H59.1v150.5
+                       l150.7-0.5c49.7,0,90.1-40.4,90.1-90.1v-181H240.9z M240.9,195.2c0,17.1-13.9,31-31,31h-91.6v-26.3v-5.4h122.6V195.2z"/>
+                   </g>
                     </svg>
-                </div>
-                <div class="logo-box">
-                    <img class="logo-fill" src="./img/sup-fill.svg" alt="이유섭의 포트폴리오의 로고 입니다.">
+                    <img class="logo" src="./resourse/img/logo_fill.svg" alt="이유섭의 포트폴리오입니다.">
                 </div>
                 <span><span>E.U.SUP's</span> PORTFOLIO</span>
+                
             </div>
         </div>
-        <div class="section sec2">
-            <p class="text-hide">섹션2</p>
+        <div class="section section02">
             <div class="con">
-                <span class="sec-name">리더십보다는&nbsp;<span>&nbsp;안심되는 팔로워십</span></span>
-                <span class="content-txt">거창하게 '무언가를 하겠다.'라고 말씀드릴 수 없습니다.<br> 다만 "이 사람이라 다행이다." 라고 생각하시게끔 행동하겠습니다. <span>저는 신입 웹 퍼블리셔를 꿈꾸는<br> 이유섭입니다.</span></span>
-            </div>
-        </div>
-        <div class="section sec3">
-            <p class="text-hide">섹션3</p>
-            <div class="con">
-                <div class="vital-wrap">
-                    <svg version="1.1" class="vital" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 1045.2 396.5" enable-background="new 0 0 1045.2 396.5" xml:space="preserve">
-<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" d="M1045.2,197.2H545l-58.1,177.1
-	c-1.5,4.7-8.2,4.7-9.8,0L419,197.2h0L360.1,17.7c-1.3-3.9-6.9-3.9-8.1,0L293,197.2c0,0-293,0-293,0"/>
-</svg>
-                </div>
-                <p class="text-hide">이유섭의 웹 퍼블리싱 모토</p>
-                <div class="contetn-txt">
-                    <span>디</span>
-                    <span>자</span>
-                    <span>인</span>
-                    <span>부</span>
-                    <span>터</span>
-                    <span>&nbsp;</span>
-                    <span>퍼</span>
-                    <span>블</span>
-                    <span>리</span>
-                    <span>싱</span>
-                    <span>까</span>
-                    <span>지</span>
-                </div>
-            </div>
-        </div>
-        <div class="section sec4">
-            <p class="text-hide">섹션4</p>
-            <div class="con">
-                <div class="picto-wrap">
-                    <div class="item item1">
-                        <img src="./img/pt-paint.svg" alt="페인트 픽토그램 이미지">
-                    </div>
-                    <div class="item item2">
-                        <img src="./img/pt-pen.svg" alt="펜 포토그램 이미지">
-                    </div>
-                    <div class="item item3">
-                        <img src="./img/pt-device-drawing.svg" alt="디지털 드로잉 이미지">
-                    </div>
-                    <div class="item item3">
-                        <img src="./img/pt-mark-up.svg" alt="웹디자인 픽토그램 이미지">
-                    </div>
-                    <div class="item item3">
-                        <img src="./img/pt-image-cut.svg" alt="웹편집 픽토그램 이지미">
-                    </div>
-                </div>
-                <p class="text-hide">픽토그램 이미지 설명</p>
-                <div class="text-wrap">
-                    <span>Painting</span>
-                    <span>Drawing</span>
-                    <span>Digital Drawing</span>
-                    <span>Mark Up</span>
-                    <span>Edit Image</span>
-                </div>
-            </div>
-        </div>
-        <div class="section sec5">
-            <p class="text-hide">섹션5</p>
-            <!-- <div class="sec5-bg bg1"></div> -->
-            <div class="con">
-                <span class="sec-name">PROPLIE</span>
-                <div class="sec5-wrap sec5-left">
-                    <div class="sec5-left-box">
-                        <span><span>이름</span>이유섭</span>
-                        <span><span>생년월일</span>1996.04.11</span>
-                        <span><span>전공/학력</span>시각디자인 - 공주대학교</span>
-                    </div>
-                    <div class="sec5-left-box">
-                        <span><span>연혁</span></span>
-                        <span><span>2015</span>공주대학교 입학</span>
-                        <span><span>2016</span>전북 금연지원센터 대학생 공모전 포스터 대상</span>
-                        <span><span>2019</span>충남 산업 디자인 대전 패키지 부문 특선</span>
-                        <span><span>2021</span>졸업</span>
-                        <span><span>2021</span>대전SBS 컴퓨터 아카데미 웹디자인 수료</span>
-                    </div>
-                </div>
-                <div class="sec5-wrap sec5-right">
-                    <span>직무역량</span>
-                    <div class="graph-wrap">
-                        <div class="work-item item1">
-                            <p class="text-hide">가능한 프로그램 : 포토샵</p>
-                            <svg version="1.1" id="sec2-item-photo" class="graph" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
-                                <style type="text/css">
-                                    .st0{fill:none;stroke:#163468;stroke-width:40;stroke-miterlimit:10;}
-                                </style>
-                                <path class="st0" d="M247,65c19.9,22.7,31.9,52.4,31.9,85c0,71.2-57.8,129-129,129S21,221.2,21,150S78.8,21,150,21"/>
-                                <span class="svg-text" style="color: #163468;">PS</span>
-                            </svg>
-                        </div>
-                        <div class="work-item item2">
-                            <p class="text-hide">가능한 프로그램 : 일러스트레이터</p>
-                            <svg version="1.1" id="sec2-item-ai" class="graph" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                            y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
-                            <style type="text/css">
-                                .st1{fill:none;stroke:#FFAA71;stroke-width:40;stroke-miterlimit:10;}
-                            </style>
-                            <path class="st1" d="M199.5,30.8C246.2,50.2,279,96.3,279,150c0,71.2-57.8,129-129,129S21,221.2,21,150S78.8,21,150,21"/>
-                            <span class="svg-text" style="color: #FFAA71;">AI</span>
-                        </svg>
-                        </div>
-                        <div class="work-item item3">
-                            <p class="text-hide">가능한 프로그램 : 어도비 XD</p>
-                            <svg version="1.1" id="sec2-item-xd" class="graph" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                            y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
-                            <style type="text/css">
-                                .st3{fill:none;stroke:#8E4F85;stroke-width:40;stroke-miterlimit:10;}
-                            </style>
-                            <path class="st3" d="M224.8,255.1c-21.1,15-46.9,23.9-74.8,23.9c-71.2,0-129-57.8-129-129S78.8,21,150,21"/>
-                            <span class="svg-text" style="color: #8E4F85;">XD</span>
-                        </svg>
-
-                        </div>
-                        <div class="work-item item4">
-                            <p class="text-hide">가능한 기술 : 웹 마크업</p>
-                            <svg version="1.1" id="sec2-item-html" class="graph"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                            y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
-                            <style type="text/css">
-                                .st4{fill:none;stroke:#79C9C9;stroke-width:40;stroke-miterlimit:10;}
-                            </style>
-                            <path class="st4" d="M279,150c0,71.2-57.8,129-129,129S21,221.2,21,150S78.8,21,150,21"/>
-                            <span class="svg-text" style="color: #79C9C9;">HTML<br>CSS</span>
-                        </svg>
-                        </div>
-                        <div class="work-item item5">
-                            <p class="text-hide">가능한 기술 : 자바스크립트 - 제이쿼리</p>
-                            <svg version="1.1" id="sec2-item-js" class="graph" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
-                                <style type="text/css">
-                                    .st5{fill:none;stroke:#E8E887;stroke-width:40;stroke-miterlimit:10;}
-                                </style>
-                                <path class="st5" d="M235.7,246.4C212.9,266.7,182.9,279,150,279c-71.2,0-129-57.8-129-129S78.8,21,150,21"/>
-                                <span class="svg-text" style="color: #E8E887;">JS</span>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="sec5-bg bg2"></div> -->
-        </div>
-        <div class="section sec6">
-            <p class="text-hide">섹션6</p>
-            <div class="sec6-wrap">
-                <div class="con">
-                    <span class="sec-name">PORTFOLIO</span>
-                    <div class="port-wrap">
-                        <div class="item item1" style="background-image: url(./img/samsung.jpeg);" onclick="window.open('http://gurebab.dothome.co.kr/Samsung/')">
-                            <p class="text-hide">삼성전자서비스 모작 이미지입니다.</p>
-                            <div class="opacity">
-                                <span class="item-name">삼성전자 서비스</span>
-                                <span class="text-content">삼성전자 서비스<br>모작</span>
-                                <span class="direct">바로가기</span>
+                <div class="section_wrap">
+                    <div class="item item01">
+                        <div class="slide_item_wrap">
+                            <div class="slide_item slide_item01">
+                                <div class="icon_wrap">
+                                    <div class="icon"></div>
+                                    <p>Digital Painting</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item item2" style="background-image: url(./img/samhwa.jpeg);" onclick="window.open('https://gurebab.github.io/samhwa/')">
-                            <p class="text-hide">삼화페인트 리디자인 이미지입니다.</p>
-                            <div class="opacity">
-                                <span class="item-name">삼화페인트</span>
-                                <span class="text-content">유저친화적 인터페이스와<br>기능성에 집중한 리디자인</span>
-                                <span class="direct">바로가기</span>
+                            <div class="slide_item slide_item02">
+                                <div class="icon_wrap">
+                                    <div class="icon"></div>
+                                    <p>Image Editing</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item item3" style="background-image: url(./img/ilsin.jpg);" onclick="window.open('https://gurebab.github.io/ilsin/')">
-                            <p class="text-hide">일신바이오로직스 리디자인 이미지입니다.</p>
-                            <div class="opacity">
-                                <span class="item-name">일신바이오</span>
-                                <span class="text-content">전문성과 기술력에 집중한<br>기업의 특성을 고려한 리디자인</span>
-                                <span class="direct">바로가기</span>
+                            <div class="slide_item slide_item03">
+                                <div class="icon_wrap">
+                                    <div class="icon"></div>
+                                    <p>Painting</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="item item4" style="background-image: url(./img/sambu.jpeg); background-position: center;"onclick="window.open('http://gurebab.dothome.co.kr/sambu/')">
-                            <p class="text-hide">삼부토건 리디자인 이미지입니다.</p>
-                            <div class="opacity">
-                                <span class="item-name">삼부토건 서비스</span>
-                                <span class="text-content">헌신과 신뢰 이미지에 집중하며 제작한<br> 건설사 리디자인</span>
-                                <span class="direct">바로가기</span>
+                            <div class="slide_item slide_item04">
+                                <div class="icon_wrap">
+                                    <div class="icon"></div>
+                                    <p>Mark-Up</p>
+                                </div>
+                            </div>
+                            <div class="slide_item slide_item05">
+                                <div class="icon_wrap">
+                                    <div class="icon"></div>
+                                    <p>Drowing</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="item item02">
+                        <div class="text_wrap">
+                            <h2 class="tit">리더십보다는 안심되는 팔로워십</h2>
+                            <p>거창하게 '무언가를 하겠다.'라고 말씀드릴 수 없습니다.<br>다만 "이 사람이라 다행이다." 라고 생각하게끔 행동하겠습니다.</p>
+                            <p class="em">저는 신입 웹 퍼블리셔를 꿈꾸는<br>이유섭입니다.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="section sec7">
-            <p class="text-hide">섹션7</p>
+        <div class="section section03">
             <div class="con">
-                <div class="section-name-wrap">
-                    <span class="sec-name">Other Create</span>
-                    <ul class="sec7-list">
-                        <li>Drawing</li>
-                        <li>Degital Drawing</li>
-                        <li>Other</li>
+                <div class="item item01">
+                    <div class="profile_wrap">
+                        <h2 class="tit">Profile</h2>
+                        <ul>
+                            <li><span class="cell">이름</span><span>이유섭</span></li>
+                            <li><span class="cell">생년월일</span><span>1996.04.11</span></li>
+                            <li><span class="cell">전공/학력</span><span>시각디자인/공주대학교</span></li>
+                        </ul>
+                    </div>
+                    <div class="profile_wrap">
+                        <h2 class="tit">History</h2>
+                        <ul>
+                            <li><span class="cell">2022.05</span><span>(주)지오인프라 - 퇴사</span></li>
+                            <li><span class="cell">2021.07</span><span>(주)지오인프라 - UX/UI팀 디자이너 입사</span></li>
+                            <li><span class="cell">2021.06</span><span>대전 SBS 컴퓨터 아카데미 웹디자인 수료</span></li>
+                            <li><span class="cell">2021.03</span><span>공주대학교 졸업</span></li>
+                            <li><span class="cell">2019</span><span>충남 산업디자인대전 패키지부문 특선</span></li>
+                            <li><span class="cell">2016</span><span>전북 금연지원센터 대학생 공모전 포스터 대상</span></li>
+                            <li><span class="cell">2015</span><span>공주대학교 입학</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item item02">
+                    <div class="profile_wrap">
+                        <div class="tit_wrap">
+                            <h2 class="tit">SKILL</h2>
+                        </div>
+                        <ul>
+                            <li><a href="javascript:;"><span>PhotoShop</span></a></li>
+                            <li><a href="javascript:;"><span>Illustrator</span></a></li>
+                            <li><a href="javascript:;"><span>XD</span></a></li>
+                            <li><a href="javascript:;"><span>MarkUp</span></a></li>
+                            <li><a href="javascript:;"><span>JavaScript</span></a></li>
+                            <li><a href="javascript:;"><span>J-Qurry</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section04">
+            <div class="con">
+                <div class="tit_wrap">
+                    <h2 class="tit">Portfolio</h2>
+                </div>
+                <ul>
+                    <li>
+                        <div class="inner">
+                            <div class="img_section">
+                                <img src="./resourse/img/section_04_06_national.png" alt="내셔널지오그래픽">
+                                <div class="hover_event">
+                                    <a class="item item01" href="https://www.nationalgeographic.com/" target="_blank">
+                                        <div class="icon"></div>
+                                        <p>운영 사이트 바로가기</p>
+                                    </a>
+                                    <a class="item item02" href="https://gurebab.github.io/geographic/" target="_blank">
+                                        <div class="icon"></div>
+                                        <p>퍼블리싱 페이지 바로가기</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <span>내셔널지오그래픽</span>
+                                <span>리디자인</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="img_section">
+                                <img src="./resourse/img/section04_01_kdi.png" alt="코리아디펜스인더스트리 바로가기">
+                                <div class="hover_event">
+                                    <a class="item item01" href="https://www.koreadefenseindustry.com/home/main.do?screenTp=USER" target="_blank">
+                                        <div class="icon"></div>
+                                        <p>운영 사이트 바로가기</p>
+                                    </a>
+                                    <a class="item item02" href="https://gurebab.github.io/kdi/" target="_blank">
+                                        <div class="icon"></div>
+                                        <p>퍼블리싱 페이지 바로가기</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <span>코리아디펜스인터스트리</span>
+                                <span>참여 : 메인페이지 디자인 50%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="img_section">
+                                <img src="./resourse/img/section04_02_cnsport.png" alt="코리아디펜스인더스트리 바로가기">
+                                <div class="hover_event">
+                                    <a class="item item01" href="https://www.cnsports.or.kr/home/main.do;jsessionid=B52BFE7A358086B0E48FF73DBC2721BD?screenTp=USER" target="_blank">
+                                        <div class="icon"></div>
+                                        <p>운영 사이트 바로가기</p>
+                                    </a>
+                                    <a class="item item02" href="https://gurebab.github.io/cnsport/" target="_blank">
+                                        <div class="icon"></div>
+                                        <p>퍼블리싱 페이지 바로가기</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <span>충남체육회</span>
+                                <span>참여 : 디자인 100%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="img_section">
+                                <img src="./resourse/img/section_04_03_cnmusic.png" alt="코리아디펜스인더스트리 바로가기">
+                                <div class="hover_event">
+                                    <a class="item item01" href="https://www.cnmusicfactory.com/" target="_blank">
+                                        <div class="icon"></div>
+                                        <p>운영 사이트 바로가기</p>
+                                    </a>
+                                    <a class="item item02" href="https://gurebab.github.io/cnmusicfactory/" target="_blank">
+                                        <div class="icon"></div>
+                                        <p>퍼블리싱 페이지 바로가기</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <span>충남음악창작소</span>
+                                <span>메인페이지 리디자인</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="img_section">
+                                <img src="./resourse/img/section_04_04_sambu.png" alt="삼부토건 바로가기">
+                                <div class="hover_event">
+                                    <a class="item item01" href="http://www.sambu.co.kr/" target="_blank">
+                                        <div class="icon"></div>
+                                        <p>운영 사이트 바로가기</p>
+                                    </a>
+                                    <a class="item item02" href="https://gurebab.github.io/sambu/" target="_blank">
+                                        <div class="icon"></div>
+                                        <p>퍼블리싱 페이지 바로가기</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <span>삼부토건</span>
+                                <span>리디자인</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="img_section">
+                                <img src="./resourse/img/section_04_05_ilsin.png" alt="일신바이오 바로가기">
+                                <div class="hover_event">
+                                    <a class="item item01" href="http://www.1sbb.co.kr/KOR/main.php" target="_blank">
+                                        <div class="icon"></div>
+                                        <p>운영 사이트 바로가기</p>
+                                    </a>
+                                    <a class="item item02" href="https://gurebab.github.io/ilsin/" target="_blank">
+                                        <div class="icon"></div>
+                                        <p>퍼블리싱 페이지 바로가기</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <span>일신바이오</span>
+                                <span>리디자인</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section section05">
+            <div class="con">
+                <div class="tit_wrap">
+                    <h2 class="tit">Design</h2>
+                </div>
+                <ul>
+                    <li>
+                        <div class="inner">
+                            <div class="img_section">
+                                <img src="./resourse/img/section04_01_kdi.png" alt="코리아디펜스인더스트리 바로가기">
+                                <div class="hover_event">
+                                    <a class="item" href="https://www.koreadefenseindustry.com/home/main.do?screenTp=USER" target="_blank">
+                                        <div class="icon"></div>
+                                        <p>페이지 바로가기</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>코리아디펜스인더스트리</p>
+                                <p class="percent">디자인 참여율 : 50%</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="img_section">
+                                <img src="./resourse/img/section04_02_cnsport.png" alt="충청남도체육회">
+                                <div class="hover_event">
+                                    <a class="item" href="https://www.cnsports.or.kr/home/main.do;jsessionid=B52BFE7A358086B0E48FF73DBC2721BD?screenTp=USER" target="_blank">
+                                        <div class="icon"></div>
+                                        <p>페이지 바로가기</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>충청남도체육회</p>
+                                <p class="percent">디자인 참여율 : 100%</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="img_section">
+                                <img src="./resourse/img/section_05_01_hongju.png" alt="홍주문화관광재단">
+                                <div class="hover_event">
+                                    <a class="item" href="https://hongju.or.kr/" target="_blank">
+                                        <div class="icon"></div>
+                                        <p>페이지 바로가기</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>홍주문화관광재단</p>
+                                <p class="percent">디자인 참여율 : 100%</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="img_section">
+                                <img src="./resourse/img/section_05_02_nics.png" alt="화학물질안전원 메인페이지">
+                                <div class="hover_event">
+                                    <a class="item" href="https://nics.me.go.kr/main.do" target="_blank">
+                                        <div class="icon"></div>
+                                        <p>페이지 바로가기</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>화학물질안전원</p>
+                                <p class="percent">디자인 참여율 : 100%</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="inner">
+                            <div class="img_section">
+                                <img src="./resourse/img/section_05_03_mss.png" alt="중소벤처기업부 지방청페이지">
+                                <div class="hover_event">
+                                    <a class="item" href="https://www.mss.go.kr/site/seoul/main.do" target="_blank">
+                                        <div class="icon"></div>
+                                        <p>페이지 바로가기</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>중소벤처기업부 지방청</p>
+                                <p class="percent">디자인 참여율 : 100%</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer section section06 fp-auto-height">
+            <div class="con">
+                <div class="item item01">
+                    <ul>
+                        <li class="phone">010 - 2805 - 8538</li>
+                        <li class="mail">gurenan@naver.com</li>
+                        <li class="talk">gurenan</li>
                     </ul>
                 </div>
-                <div class="sec7-slide-wrap">
-                    <div class="item">
-                        <img src="./img/pic-101 bird.png" alt="새 펜그림">
-                    </div>
-                    <div class="item">
-                        <img src="./img/pic-102 while.png" alt="고래 펜그림">
-                    </div>
-                    <div class="item">
-                        <img src="./img/pic-103 hand.png" alt="손바닥 펜그림">
-                    </div>
-                    <div class="item">
-                        <img src="./img/pic-104 astronut.png" alt="우주인 펜그림">
-                    </div>
-                    <div class="item">
-                        <img src="./img/pic-105 ping.png" alt="달팽이 손그림">
-                    </div>
-                    <div class="item">
-                        <img src="./img/pic-106 flower.png" alt="꽃 펜그림">
-                    </div>
-                </div>
-                <div class="sec7-slide-wrap hide">
-                    <div class="item">
-                        <img src="./img/pic-201 stroberry.png" alt="딸기 디지털 드로잉">
-                    </div>
-                    <div class="item">
-                        <img src="./img/pic-202 blueberry.png" alt="블루베리 디지털 드로잉">
-                    </div>
-                    <div class="item">
-                        <img src="./img/pic-203 chocolete.png" alt="초콜릿 디지털 드로잉">
-                    </div>
-                    <div class="item">
-                        <img src="./img/pic-204 sandwich.png" alt="샌드위치 디지털 드로잉">
-                    </div>
-                    <div class="item">
-                        <img src="./img/pic-205 character bird.png" alt="캐릭터디자인-새 디지털 드로잉">
-                    </div>
-                    <div class="item">
-                        <img src="./img/pic-206 character me.png" alt="캐릭터디자인-이유섭 디지털 드로잉">
-                    </div>
-                </div>
-                <div class="sec7-slide-wrap hide">
-                    <div class="item">
-                        <img src="./img/pic-301 pack.png" alt="생선 생물 패키지디자인">
-                    </div>
-                    <div class="item">
-                        <img src="./img/pic-302 pack.png" alt="유제품 매일우유 패키지 디자인">
-                    </div>
-                    <div class="item">
-                        <img src="./img/pic-303 poster01.png" alt="금연 포스터 디자인">
-                    </div>
-                    <div class="item">
-                        <img src="./img/pic-304 poster02.jpg" alt="유제품 매일우유 프로모션 포스터">
-                    </div>
-                </div>
-            </div>
-            <div class="pop">
-                <div class="pop-img-wrap">
-                    <img>
-                </div>
-            </div>
-        </div>
-        <div class="section sec8 fp-auto-height">
-            <div class="con">
-                <div class="footer-item item-left">
-                    <div class="item-left-box">
-                        <img src="./img/talk.svg" alt="카카오톡 아이디 gurenana">
-                        <span>gurenana</span>
-                    </div>
-                    <div class="item-left-box">
-                        <img src="./img/call.svg" alt="전화번호 010-2805-8538">
-                        <span>010-2805-8538</span>
-                    </div>
-                    <div class="item-left-box">
-                        <img src="./img/mail.svg" alt="온라인 메일 주소 gurebab@naver.com">
-                        <span>gurebab@naver.com</span>
-                    </div>
-                </div>
-                <div class="footer-item item-right">
+                <div class="item item02">
                     <span>CopyRight 2021 E.U.SUP<br>reserved.</span>
                 </div>
             </div>
